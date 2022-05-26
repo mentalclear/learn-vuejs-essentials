@@ -1,6 +1,6 @@
 # learn-vuejs-essentials
 
-This template should help get you started developing with Vue 3 in Vite.
+Course Link: [click here](https://learning-oreilly-com.lcpl.idm.oclc.org/videos/learn-vue-js-essentials/9780137332786/)   
 
 ## Recommended IDE Setup
 
