@@ -1,7 +1,7 @@
 # learn-vuejs-essentials
 
 Course link:
-`https://learning-oreilly-com.lcpl.idm.oclc.org/videos/learn-vue-js-essentials/9780137332786/`  
+https://learning-oreilly-com.lcpl.idm.oclc.org/videos/learn-vue-js-essentials/9780137332786/
 
 ## Project setup
 ```
