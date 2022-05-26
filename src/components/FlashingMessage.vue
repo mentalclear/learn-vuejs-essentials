@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 v-if="shouldShowMessage"> {{ message }}</h1>
+    <h1 v-if="shouldShowMessage">{{ message }}</h1>
   </div>
 </template>
 
