@@ -1,14 +1,11 @@
 <template>
   <div>
     <h1>People List</h1>
-
-    <!-- Now with :age it's JS code in quotes
-    <PeopleListItem name="Dimon" :age="99" hairColor="grey" />
-    <PeopleListItem name="Dimas" age="89" hairColor="grey" />
-    <PeopleListItem name="Dimma" age="42" hairColor="brown" /> -->
-    <PeopleListItem :person="person1" />
-    <PeopleListItem :person="person2" />
-    <PeopleListItem :person="person3" />
+    <PeopleListItem
+      v-for="person in people"
+      :key="person.name"
+      :person="person"
+    />
   </div>
 </template>
 
@@ -22,12 +19,26 @@ export default {
   },
   data() {
     return {
-      person1: { name: "Dimetrio", age: 42, hairColor: "brown" },
-      person2: { name: "Dimon", age: 99, hairColor: "grey" },
-      person3: { name: "Dimas", age: 89, hairColor: "grey" },
+      people: [
+        { name: "Dimetrio", age: 42, hairColor: "brown" },
+        { name: "Dimon", age: 99, hairColor: "grey" },
+        { name: "Dimas", age: 89, hairColor: "grey" },
+      ],
     };
   },
 };
 </script>
 
-<style></style>
+<style scoped>
+h1 {
+  color: brown;
+}
+</style>
+
+<!-- Now with :age it's JS code in quotes
+    <PeopleListItem name="Dimon" :age="99" hairColor="grey" />
+    <PeopleListItem name="Dimas" age="89" hairColor="grey" />
+    <PeopleListItem name="Dimma" age="42" hairColor="brown" />
+    <PeopleListItem :person="person1" />
+    <PeopleListItem :person="person2" />
+    <PeopleListItem :person="person3" /> -->

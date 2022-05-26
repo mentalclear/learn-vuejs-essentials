@@ -1,7 +1,8 @@
 <template>
   <div>
+    <!-- 
     <FlashingMessage :delay="500" message="Hello friends!" />
-    <!--  <TimerTest :delay="2000" name="Timer 1" @tick="onTick" />
+    <TimerTest :delay="2000" name="Timer 1" @tick="onTick" />
     <TimerTest :delay="4000" name="Timer 2" @tick="onTick" />
     <LifecycleTest
       v-if="numberOfClicks < 10"
@@ -16,7 +17,9 @@
       @increment="increment"
       @reset="reset"
     />
-    <PeopleList />-->
+    -->
+    <h1>My Vue App</h1>
+    <PeopleList />
   </div>
 </template>
 
@@ -26,12 +29,12 @@ import CounterButton from "./components/CounterButton.vue";
 import CongratulationsMsg from "./components/CongratulationsMsg.vue";
 import LifecycleTest from "./components/LifecycleTest.vue";
 import TimerTest from "./components/TimerTest.vue";
-import FlashingMessage from "./components/FlashingMessage.vue";
+// import FlashingMessage from "./components/FlashingMessage.vue";
 
 export default {
   name: "App",
   components: {
-    FlashingMessage,
+    // FlashingMessage,
     PeopleList,
     CounterButton,
     CongratulationsMsg,
@@ -59,8 +62,8 @@ export default {
 };
 </script>
 
-<style>
-#app {
+<style scoped>
+h1 {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
